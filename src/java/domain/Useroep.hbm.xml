@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 May, 2017 2:09:43 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="domain.Useroep" table="USEROEP" schema="APP">
+        <id name="uname" type="string">
+            <column name="UNAME" length="20" />
+            <generator class="assigned"></generator>
+        </id>
+        <property name="password" type="string">
+            <column name="PASSWORD" length="20" />
+        </property>
+        <property name="faculty" type="java.lang.Boolean">
+            <column name="FACULTY" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 May, 2017 2:09:43 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="domain.Aspost" table="ASPOST" schema="APP">
+        <id name="asid" type="string">
+            <column name="ASID" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="uname" type="string">
+            <column name="UNAME" length="20" />
+        </property>
+        <property name="astmt" type="string">
+            <column name="ASTMT" length="32700" />
+        </property>
+    </class>
+</hibernate-mapping>
